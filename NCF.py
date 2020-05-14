@@ -1,21 +1,16 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import warnings
-import pydot
+
 
 from sklearn.model_selection import train_test_split
 import keras
 from keras.optimizers import Adam
-from keras.utils.vis_utils import model_to_dot
-from sklearn.metrics import mean_absolute_error
-from keras.utils.vis_utils import model_to_dot
 
 
 class NeuralCollaborativeFiltering:
 
 	def __init__(self, n_users, n_movies, n_latent_factors, learning_rate, n_epochs):
-		keras.utils.vis_utils.pydot = pydot
 		self.n_users = n_users
 		self.n_movies = n_movies
 		self.n_latent_factors = n_latent_factors
