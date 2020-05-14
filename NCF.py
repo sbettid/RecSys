@@ -13,7 +13,7 @@ from sklearn.metrics import mean_absolute_error
 from keras.utils.vis_utils import model_to_dot
 keras.utils.vis_utils.pydot = pydot
 
-class NCF:
+class NeuralCollaborativeFiltering:
 
 	def __init__(self, n_users, n_movies, n_latent_factors, learning_rate, n_epochs):
 		self.n_users = n_users
